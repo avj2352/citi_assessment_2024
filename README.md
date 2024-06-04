@@ -10,3 +10,8 @@ Please find the details
 - In order to run unit test, execute `npm run test`
 
 ## Front-end Technical Assessment
+
+Frontend design has been completed, icons are missing due to lack of assets provided for the assignment.
+Basic layout and scaffolding has been completed.
+
+- In order to run the frontend project, execute `npm start`
