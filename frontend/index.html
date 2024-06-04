@@ -1,23 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="module" src="script.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <aside class="sidenav">
+                <div class="sidenav__brand">
+                    <a class="sidenav__brand-link" href="#"
+                        >Kahf<span class="text-light">Tech</span></a
+                    >
+                    <i class="fas fa-times sidenav__brand-close"></i>
+                </div>
+                <div class="row row--align-v-center row--align-h-center">
+                    <ul class="navList">
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >dashboard</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >overview</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >customers</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >projects</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >project files</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >messages</span
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                class="navList__subheading row row--align-v-center"
+                            >
+                                <span class="navList__subheading-title"
+                                    >notifications</span
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="main"></main>
+        </div>
+    </body>
 </html>
