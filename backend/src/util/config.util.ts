@@ -1,7 +1,6 @@
-import * as config from "config";
+import { get } from "config";
 
-const server: { port: string; name: string; version: string } =
-  config.get("server");
+const server: { port: string; name: string; version: string } = get("server");
 
 // serverName
 export const getServerName = (): string =>

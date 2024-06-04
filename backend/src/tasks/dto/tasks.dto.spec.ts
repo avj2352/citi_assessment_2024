@@ -32,7 +32,7 @@ describe("DTO Validation", () => {
       {
         property: "title",
         constraints: {
-          isNotEmpty: "id should not be empty",
+          isNotEmpty: "title should not be empty",
         },
       },
       {
