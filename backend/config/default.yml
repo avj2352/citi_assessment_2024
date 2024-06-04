@@ -1,0 +1,4 @@
+server:
+  port: 5000
+  name: Citi Backend Assignment
+  version: 1.0.0
