@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import fs from "fs";
 // ..custom
-import { ITask } from "../models/tasks.model";
+import { ITask, ITaskJSON } from "../models/tasks.model";
 
 @Injectable()
 export class FileService {
@@ -11,12 +11,24 @@ export class FileService {
     this.filePath = "/util/data.json";
   }
 
-  async readJSON(): Promise<ITask[]> {
+  async readJSON(): Promise<ITaskJSON[]> {
     try {
-      const data: ITask[] = JSON.parse(fs.readFileSync(this.filePath, "utf-8"));
+      const data: ITaskJSON[] = JSON.parse(
+        fs.readFileSync(this.filePath, "utf-8")
+      );
       return data;
     } catch (error) {
       Promise.reject(`Error reading file:, ${(error as Error).message}`);
+    }
+  }
+
+  async writeJSON(data: ITaskJSON[]): Promise<string> {
+    try {
+      const jsonData = JSON.stringify(data, null, 2); // Add indentation for readability (optional)
+      fs.writeFileSync(this.filePath, jsonData);
+      return Promise.resolve(`Write to file done!`);
+    } catch (error) {
+      Promise.reject(`Error writing to file:, ${(error as Error).message}`);
     }
   }
 }

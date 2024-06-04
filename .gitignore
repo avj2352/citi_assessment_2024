@@ -3,6 +3,9 @@
 **/build/
 **/.vscode
 
+# backend
+**/dist/
+
 # files to ignore
 **/.DS_Store
 

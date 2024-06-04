@@ -1,0 +1,7 @@
+{
+  "server": {
+    "port": 3000,
+    "name": "Citi Backend Assignment",
+    "version": "1.0.0"
+  }
+}

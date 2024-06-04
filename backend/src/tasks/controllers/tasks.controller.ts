@@ -92,7 +92,7 @@ export class TaskController {
     @Param(ValidationPipe) param: TaskParamIdDto
   ): Promise<{ message: string }> {
     const { id } = param;
-    await this.taskService.deleteTask(id);
+    await this.taskService.deleteTaskById(id);
     return Promise.resolve({ message: "ok" });
   }
 }

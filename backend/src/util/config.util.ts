@@ -1,4 +1,4 @@
-import config from "config";
+import * as config from "config";
 
 const server: { port: string; name: string; version: string } =
   config.get("server");
